@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a1 = [3, 5, 1, 8, -3, 7, 8]
+    let a2 = [7, 12, 6, 9, 20, 56, 99]
+    let a3 = []
+    let a4 = [0, 0, 0, 0, 0, 0]
+
+    function timMin(a) {
+        if (a.length === 0)
+            return -1
+        let min = a[0]
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] < a[0]) {
+                min = a[i]
+                vtMin = i
+            }
+        }
+        return vtMin
+    }
+
+
+    let result1 = timMin(a1)
+    document.write('mảng 1 là '+ a1 + '<br>'+ ' gía trị nhỏ nhất nằm ở vị trí ' + result1 +"<hr>")
+    let result2 = timMin(a2)
+    document.write('mảng 2 là '+ a2 + '<br>'+ ' gía trị nhỏ nhất nằm ở vị trí ' + result2 +"<hr>")
+    let result3 = timMin(a3)
+    document.write('mảng 3 là '+ a3 + '<br>'+ ' gía trị nhỏ nhất nằm ở vị trí ' + result3 +"<hr>")
+    let result4 = timMin(a4)
+    document.write('mảng 4 là '+ a4 + '<br>'+ ' gía trị nhỏ nhất nằm ở vị trí ' + result4 +"<hr>")
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
